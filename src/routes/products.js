@@ -6,7 +6,6 @@ const upload = multer({ dest: 'uploads/' }); // simple; production: cleanup / st
 const productController = require('../controllers/productController');
 const { productCreateValidation, productListValidation } = require('../utils/validators');
 const { validationResult } = require('express-validator');
-const upload = require('../middleware/upload');
 
 
 const handleValidation = (req, res, next) => {
